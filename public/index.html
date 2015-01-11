@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<title>CSP Demo</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<style>
+    #log { padding: 10px; }
+    #log pre.consoleit { margin-bottom: 20px; padding: 4; margin: 5px;}
+    .input-group { padding: 0 20px 0 30px; }
+</style>
+</head>
+
+<body>
+    <div id="log"></div>
+    <template id="input-prompt-tpl">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="[Enter Description]">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+            </span>
+        </div>
+    </template>
+    <script src="browser-polyfill.js"></script>
+    <script src="bundle.js"></script>
+</body>
